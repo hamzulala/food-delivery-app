@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'food-delivery-app',
 
-  projectId: '422sg37n',
+  projectId: 'e5cwsnd9',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
