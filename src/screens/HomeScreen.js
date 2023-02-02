@@ -3,7 +3,7 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsVerticalIcon } from 'react-native-heroicons/outline'
 import { UserIcon } from 'react-native-heroicons/solid'
-import Categories from '../components/Categories'
+import Categories from '../../components/Categories'
 
 const HomeScreen = () => {
     const navigation = useNavigation();
