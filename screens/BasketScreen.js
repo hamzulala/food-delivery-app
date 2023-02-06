@@ -76,7 +76,7 @@ const BasketScreen = () => {
                 <Text className='text-black font-extrabold'>${parseFloat(basketTotal + 5.99).toFixed(2)}</Text>
             </View>
 
-            <TouchableOpacity className='bg-[#00CCBB] p-4 rounded-lg flex-row items-center space-x-1'>
+            <TouchableOpacity onPress={() => navigation.navigate('PreparingOrder')} className='bg-[#00CCBB] p-4 rounded-lg flex-row items-center space-x-1'>
                 <Text className='flex-1 text-white font-extrabold text-lg text-center' >Place Order</Text>
             </TouchableOpacity>
 

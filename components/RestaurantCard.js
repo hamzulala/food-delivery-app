@@ -10,7 +10,7 @@ const RestaurantCard = ({id, imgUrl, title, rating, genre, address, short_descri
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => {navigation.navigate('Restaurant', {id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat})}} className='bg-white mr-3 shadow'>
+    <TouchableOpacity onPress={() => {navigation.navigate('Restaurant', {id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat})}} className='bg-white w-64 mr-3 shadow'>
       <Image source={{uri: urlFor(imgUrl).url(),}} className='h-36 w-64 rounded-sm'/>
       <View className='px-3 pb-4'>
         <Text className='font-bold text-lg pt-2'>{title}</Text>
@@ -24,7 +24,7 @@ const RestaurantCard = ({id, imgUrl, title, rating, genre, address, short_descri
 
         <View className='flex-row items-center space-x-1'>
             <MapPinIcon color='gray' opacity={0.4} size={22}/>
-            <Text className='text-ellipsis text-xs text-gray-500 '>Nearby . {address}</Text>
+            <Text className='text-ellipsis text-xs text-gray-500 pr-1'>Nearby . {address}</Text>
         </View>
 
       </View>
